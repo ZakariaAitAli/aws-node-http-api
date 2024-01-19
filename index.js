@@ -1,4 +1,4 @@
-export async function handler(event) {
+module.exports.handler = async (event) => {
   return {
     statusCode: 200,
     body: JSON.stringify(
@@ -10,4 +10,4 @@ export async function handler(event) {
       2
     ),
   };
-}
+};
